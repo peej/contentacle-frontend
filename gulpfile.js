@@ -80,7 +80,8 @@ gulp.task('watch', ['default'], function() {
 gulp.task('serve', function() {
     connect.server({
         root: 'dist',
-        port: 9000
+        port: 9000,
+        fallback: 'dist/index.html'
     });
 });
 
